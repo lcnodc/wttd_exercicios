@@ -27,7 +27,7 @@ def get_statistics(list_):
     len_ = len(list_)
     avg_ = mean(list_)
 
-    print("""
+    return ("""
         Min Value: {}
         Max Value: {}
         Length: {}
@@ -39,7 +39,7 @@ def main():
     if len(sys.argv) < 2:
         exit('usage: ./sum_multiples_below_of.py list')
 
-    get_statistics(sys.argv[1:])
+    print(get_statistics(sys.argv[1:]))
 
 if __name__ == '__main__':
     main()
